@@ -69,7 +69,14 @@ https://cloud.hacktricks.xyz/<br/>
 
 ## :star2:Stargazers over time  [![Star History Chart](https://api.star-history.com/svg?repos=RuoJi6/cloud-security&type=Date)](https://star-history.com/#RuoJi6/cloud-security&Date)
 
-[![Stargazers repo roster for @RuoJi6/HackerPermKeeper](https://reporoster.com/stars/dark/notext/RuoJi6/HackerPermKeeper)](https://github.com/RuoJi6/HackerPermKeeper)
+## Stargazers
+
+[![Stargazers repo roster for @RuoJi6/cloud-security](http://reporoster.com/stars/RuoJi6/cloud-security)](https://github.com/RuoJi6/cloud-security/stargazers)
+
+
+## Forkers
+
+[![Forkers repo roster for @AabyssZG/SpringBoot-Scan](http://reporoster.com/forks/RuoJi6/cloud-security)](https://github.com/RuoJi6/cloud-security/network/members)
 
 
 <br/><br/>
