@@ -68,7 +68,6 @@ https://cloud.hacktricks.xyz/<br/>
 
 
 ## Stargazers over time
-
 [![Stargazers over time](https://starchart.cc/RuoJi6/cloud-security.svg)](https://starchart.cc/RuoJi6/cloud-security)
 
 
