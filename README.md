@@ -68,7 +68,7 @@ https://cloud.hacktricks.xyz/<br/>
 
 
 
-## :star2:Stargazers over time  [![Stargazers over time](https://starchart.cc/RuoJi6/cloud-security.svg)](https://starchart.cc/RuoJi6/cloud-security)
+## :star2:Stargazers over time  [![Star History Chart](https://api.star-history.com/svg?repos=RuoJi6/cloud-security&type=Date)](https://star-history.com/#RuoJi6/cloud-security&Date)
 
 
 
@@ -80,3 +80,6 @@ https://cloud.hacktricks.xyz/<br/>
 <a href="https://github.com/RuoJi6/cloud-security/">
   <img height=150 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=RuoJi6&layout=compact&langs_count=8&card_width=320" />
 </a>
+
+扫码添加 回复  弱鸡交流群
+![d8180401c3e68be9d03d26cfc55ca33](https://github.com/RuoJi6/cloud-security/assets/79234113/7bd77101-782f-4d0c-a4bc-4ee9f73308b9)
