@@ -1,5 +1,5 @@
 # cloud-security
-
+### 云安全
                          _                 _                                 _ _         
                         | |               | |                               (_) |        
                      ___| | ___  _   _  __| |______ ___  ___  ___ _   _ _ __ _| |_ _   _ 
@@ -18,5 +18,64 @@
     <img src="https://badgen.net/github/issues/RuoJi6/cloud-security">
 </p>
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 国内关于k8s docker安全内容少之又少，关于靶场部分只是讲的很模糊，这里我学习了国外的云安全文章的一些不急，希望对各位师傅有一些帮助
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 国内关于k8s docker安全内容少之又少，关于靶场部分只是讲的很模糊，这里我学习了国外的云安全文章的一些不急，希望对各位师傅有一些帮助[还有很多东西还在编写中]
 <br/><br/>
+
+
+## 🚀上手指南
+* [x] k8s靶场搭建
+* [x] Sensitive keys in codebases 
+* [x] DIND (docker-in-docker) exploitation
+* [x] SSRF in the Kubernetes (K8S) world
+* [x] Container escape to the host system`
+* [x] k8s基础知识
+* [x] 还在编写中
+
+
+## :zap:提交问题
+有问题建议请提交issues<br/>
+<a href="https://github.com/RuoJi6/HackerPermKeeper/issues"><img src="https://badgen.net/github/issues/RuoJi6/HackerPermKeeper"></a>
+<br/>
+加我微信进开发者微信群聊 
+<br/><img src="https://img.shields.io/badge/WeChat-vivo50KFCKFC-green">
+<br/>
+<br/>
+
+## :world_map:版本更新
+```
+2023/11/20
+  添加
+    k8s靶场搭建
+    Sensitive keys in codebases
+    DIND (docker-in-docker) exploitation
+    SSRF in the Kubernetes (K8S) world
+    Container escape to the host system`
+    k8s基础知识
+```
+
+<br/>
+
+
+
+<br/>
+
+## :clap:致谢
+https://madhuakula.com/kubernetes-goat/docs/<br/>
+https://github.com/madhuakula/kubernetes-goat<br/>
+https://cloud.hacktricks.xyz/<br/>
+感谢以上博客以及github，让我受益良多[以上排名不分先后]
+<br/>
+
+
+
+
+## :star2:Stargazers over time  [![Stargazers over time](https://starchart.cc/RuoJi6/cloud-security.svg)](https://starchart.cc/RuoJi6/cloud-security)
+
+
+
+<a href="https://github.com/RuoJi6">
+  <img height=150 align="center" src="https://github-readme-stats.vercel.app/api?username=RuoJi6"/>
+</a>
+<a href="https://github.com/RuoJi6/cloud-security/">
+  <img height=150 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=RuoJi6&layout=compact&langs_count=8&card_width=320" />
+</a>
