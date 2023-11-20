@@ -1,6 +1,6 @@
 Kubernetes Goat靶场搭建
 
-**1、**CentOS-7-x86_64-DVD-2009镜像搭建k8s
+**1、CentOS-7-x86_64-DVD-2009镜像搭建k8s**
 
 ![image-20231120164644351](./assets/image-20231120164644351.png)
 
