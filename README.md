@@ -69,6 +69,7 @@ https://cloud.hacktricks.xyz/<br/>
 
 ## :star2:Stargazers over time  [![Star History Chart](https://api.star-history.com/svg?repos=RuoJi6/cloud-security&type=Date)](https://star-history.com/#RuoJi6/cloud-security&Date)
 
+[![Stargazers repo roster for @RuoJi6/cloud-security](https://reporoster.com/stars/dark/RuoJi6/cloud-security)](https://github.com/RuoJi6/cloud-security/stargazers)
 
 
 <br/><br/>
