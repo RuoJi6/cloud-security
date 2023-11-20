@@ -29,6 +29,7 @@
 * [x] SSRF in the Kubernetes (K8S) world
 * [x] Container escape to the host system`
 * [x] k8s基础知识
+* [x] 环境地址：https://pan.baidu.com/s/1h6nr8izEoRtcIhP27BcHuQ?pwd=ymi7 
 * [x] 还在编写中
 
 
