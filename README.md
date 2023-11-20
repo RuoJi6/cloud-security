@@ -34,7 +34,7 @@
 
 ## :zap:提交问题
 有问题建议请提交issues<br/>
-<a href="https://github.com/RuoJi6/HackerPermKeeper/issues"><img src="https://badgen.net/github/issues/RuoJi6/HackerPermKeeper"></a>
+<a href="https://github.com/RuoJi6/cloud-security/issues"><img src="https://badgen.net/github/issues/RuoJi6/cloud-security"></a>
 <br/>
 加我微信进开发者微信群聊 
 <br/><img src="https://img.shields.io/badge/WeChat-vivo50KFCKFC-green">
