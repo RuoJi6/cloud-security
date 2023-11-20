@@ -76,7 +76,7 @@ https://cloud.hacktricks.xyz/<br/>
 
 ## Forkers
 
-[![Forkers repo roster for @AabyssZG/SpringBoot-Scan](http://reporoster.com/forks/RuoJi6/cloud-security)](https://github.com/RuoJi6/cloud-security/network/members)
+[![Forkers repo roster for @RuoJi6/cloud-security](http://reporoster.com/forks/RuoJi6/cloud-security)](https://github.com/RuoJi6/cloud-security/network/members)
 
 
 <br/><br/>
