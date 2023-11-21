@@ -1,6 +1,8 @@
 **Sensitive keys in codebases**
 
 代码库中敏感信息
+![image](https://github.com/RuoJi6/cloud-security/assets/79234113/649a1467-497d-4ef9-a692-f20a72999fa6)
+
 
 <http://192.168.86.139:1230/>
 
