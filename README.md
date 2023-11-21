@@ -1,4 +1,4 @@
-# cloud-security
+![image](https://github.com/RuoJi6/cloud-security/assets/79234113/c724f0a2-6755-4c2e-b258-19a62d3da35f)![image](https://github.com/RuoJi6/cloud-security/assets/79234113/9da80624-1073-46a7-9085-a0b9a767a695)![image](https://github.com/RuoJi6/cloud-security/assets/79234113/4621701f-f925-439f-8ff6-5e49cdd90004)![image](https://github.com/RuoJi6/cloud-security/assets/79234113/b03aa32c-36af-4a94-80b7-f9d2acd82c88)![image](https://github.com/RuoJi6/cloud-security/assets/79234113/20a5dd56-f19b-4807-b3ee-fa8568b2ecb9)# cloud-security
 ### 云安全
                          _                 _                                 _ _         
                         | |               | |                               (_) |        
@@ -24,11 +24,14 @@
 
 ## 🚀上手指南
 * [x] k8s靶场搭建
-* [x] Sensitive keys in codebases 
-* [x] DIND (docker-in-docker) exploitation
-* [x] SSRF in the Kubernetes (K8S) world
-* [x] Container escape to the host system`
-* [x] k8s基础知识
+* [x] Sensitive keys in codebases [代码库中敏感信息]
+* [x] DIND (docker-in-docker) exploitation [DIND （docker-in-docker） 漏洞利用]
+* [x] SSRF in the Kubernetes (K8S) world [K8s中的ssrf]
+* [x] Container escape to the host system [容器逃逸到主机系统]
+* [x] Docker CIS benchmarks analysis [Docker CIS 基准测试分析--docker安全排查]
+* [x] Kubernetes CIS benchmarks analysis [Kubernetes CIS 基准测试分析--k8s安全排查]
+* [x] Attacking private registry [攻击docker私有注册表]
+* [x] NodePort exposed services [NodePort 暴露的服务]
 * [x] 环境地址：https://pan.baidu.com/s/1h6nr8izEoRtcIhP27BcHuQ?pwd=ymi7 
 * [x] 还在编写中
 
