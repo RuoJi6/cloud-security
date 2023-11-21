@@ -1,6 +1,8 @@
 SSRF in the Kubernetes (K8S) world
 
 K8s中的ssrf
+![image](https://github.com/RuoJi6/cloud-security/assets/79234113/0d9982b4-2b1b-455d-aa03-a9fedc780a3c)
+
 
 地址：http://192.168.86.139:1232/
 
