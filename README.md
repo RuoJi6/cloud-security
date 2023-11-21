@@ -48,13 +48,18 @@
 ## :world_map:版本更新
 ```
 2023/11/20
-  添加
-    k8s靶场搭建
-    Sensitive keys in codebases
-    DIND (docker-in-docker) exploitation
-    SSRF in the Kubernetes (K8S) world
-    Container escape to the host system`
-    k8s基础知识
+  k8s靶场搭建
+  Sensitive keys in codebases
+  DIND (docker-in-docker) exploitation
+  SSRF in the Kubernetes (K8S) world
+  Container escape to the host system
+  k8s基础知识
+--------------------------------------------------
+2023/11/21
+  Docker CIS benchmarks analysis [Docker CIS 基准测试分析--docker安全排查]
+  Kubernetes CIS benchmarks analysis [Kubernetes CIS 基准测试分析--k8s安全排查]
+  Attacking private registry [攻击docker私有注册表]
+  NodePort exposed services [NodePort 暴露的服务]
 ```
 
 <br/>
