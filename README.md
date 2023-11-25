@@ -1,4 +1,4 @@
-# cloud-security
+![image](https://github.com/RuoJi6/cloud-security/assets/79234113/4586d7b5-7e54-4e34-be7a-2d84de63ba43)![image](https://github.com/RuoJi6/cloud-security/assets/79234113/28251270-6a5e-4192-a60a-3fdbc933f82d)![image](https://github.com/RuoJi6/cloud-security/assets/79234113/40d039e6-b9ad-4d9d-b0a5-9eaae9f5fdf4)![image](https://github.com/RuoJi6/cloud-security/assets/79234113/121cddb2-06dd-446a-9a35-af12985aa2bb)# cloud-security
 ### 云安全
                          _                 _                                 _ _         
                         | |               | |                               (_) |        
@@ -32,6 +32,8 @@
 * [x] Kubernetes CIS benchmarks analysis [Kubernetes CIS 基准测试分析--k8s安全排查]
 * [x] Attacking private registry [攻击docker私有注册表]
 * [x] NodePort exposed services [NodePort 暴露的服务]
+* [x] Analyzing crypto miner container 分析加密挖矿容器[将挖矿木马映像推送到公共容器注册表]
+* [x] Kubernetes namespaces bypass [Kubernetes 命名空间绕过 内核路由表]
 * [x] 环境地址：https://pan.baidu.com/s/1h6nr8izEoRtcIhP27BcHuQ?pwd=ymi7 
 * [x] 还在编写中
 
@@ -58,8 +60,12 @@
 2023/11/21
   Docker CIS benchmarks analysis [Docker CIS 基准测试分析--docker安全排查]
   Kubernetes CIS benchmarks analysis [Kubernetes CIS 基准测试分析--k8s安全排查]
-  Attacking private registry [攻击docker私有注册表]
-  NodePort exposed services [NodePort 暴露的服务]
+  Attacking private registry [攻击docker私有注册表--k8s靶场]
+  NodePort exposed services [NodePort 暴露的服务--k8s靶场]
+--------------------------------------------------
+2023/11/25
+  Analyzing crypto miner container 分析加密挖矿容器[将挖矿木马映像推送到公共容器注册表--k8s安全排查]
+  Kubernetes namespaces bypass [Kubernetes 命名空间绕过 内核路由表--k8s靶场]
 ```
 
 <br/>
