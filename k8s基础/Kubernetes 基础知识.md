@@ -238,49 +238,49 @@ Kubernetes 基础知识
  由于一个服务通常与一个部署相关，因此可以在同一个配置文件中声明这两个服务（在此配置中声明的服务只能在内部访问）：
 
  ```yaml
- 		apiVersion: apps/v1
- 		kind: Deployment
- 		metadata:
- 		  name: mongodb-deployment
- 		  labels:
- 		    app: mongodb
- 		spec:
- 		  replicas: 1
- 		  selector:
- 		    matchLabels:
- 		      app: mongodb
- 		  template:
-		    metadata:
-		      labels:
- 		        app: mongodb
- 		    spec:
- 		      containers:
- 		      - name: mongodb
-		        image: mongo
- 		        ports:
- 		        - containerPort: 27017
- 		        env:
-		        - name: MONGO_INITDB_ROOT_USERNAME
- 		          valueFrom:
- 		            secretKeyRef:
- 		              name: mongodb-secret
- 		              key: mongo-root-username
- 		        - name: MONGO_INITDB_ROOT_PASSWORD
- 		          valueFrom: 
- 		            secretKeyRef:
- 		              name: mongodb-secret
- 		              key: mongo-root-password
- 		---
- 		apiVersion: v1
- 		kind: Service
- 		metadata:
- 		  name: mongodb-service
- 		spec:
- 		  selector:
- 		    app: mongodb
- 		  ports:
- 		    - protocol: TCP
- 		      port: 27017
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongodb-deployment
+  labels:
+    app: mongodb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongodb
+  template:
+    metadata:
+      labels:
+	app: mongodb
+    spec:
+      containers:
+      - name: mongodb
+	image: mongo
+	ports:
+	- containerPort: 27017
+	env:
+	- name: MONGO_INITDB_ROOT_USERNAME
+	  valueFrom:
+	    secretKeyRef:
+	      name: mongodb-secret
+	      key: mongo-root-username
+	- name: MONGO_INITDB_ROOT_PASSWORD
+	  valueFrom: 
+	    secretKeyRef:
+	      name: mongodb-secret
+	      key: mongo-root-password
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb-service
+spec:
+  selector:
+    app: mongodb
+  ports:
+    - protocol: TCP
+      port: 27017
        targetPort: 27017
  ```
 
@@ -289,20 +289,20 @@ Kubernetes 基础知识
  此服务将可以从外部访问（请检查nodePort和type: LoadBalancer属性）
 
  ```yaml
- 		---
- 		apiVersion: v1
- 		kind: Service
- 		metadata:
- 		name: mongo-express-service
- 		spec:
- 		selector:
- 		app: mongo-express
- 		type: LoadBalancer
- 		ports:
- 		- protocol: TCP
- 		port: 8081
- 		targetPort: 8081
- 		nodePort: 30000
+---
+apiVersion: v1
+kind: Service
+metadata:
+name: mongo-express-service
+spec:
+selector:
+app: mongo-express
+type: LoadBalancer
+ports:
+- protocol: TCP
+port: 8081
+targetPort: 8081
+nodePort: 30000
  ```
 
  这对于测试很有用，但对于生产环境，您应该只有内部服务和一个Ingress来暴露应用程序。
@@ -312,19 +312,19 @@ Kubernetes 基础知识
  这将在http://dashboard.com中暴露应用程序。
 
  ```yaml
- 	apiVersion: networking.k8s.io/v1
- 	kind: Ingress
- 	metadata:
- 	name: dashboard-ingress
- 	namespace: kubernetes-dashboard
- 	spec:
- 	rules:
- 	- host: dashboard.com
- 	http:
- 	paths:
- 	- backend:
- 	serviceName: kubernetes-dashboard
- 	servicePort: 80
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+name: dashboard-ingress
+namespace: kubernetes-dashboard
+spec:
+rules:
+- host: dashboard.com
+http:
+paths:
+- backend:
+serviceName: kubernetes-dashboard
+servicePort: 80
  ```
 
 **秘密配置文件示例**
@@ -511,51 +511,51 @@ Kubernetes中有不同类型的secrets
 
 ```yaml
 secretpod.yaml
-	apiVersion: v1
-	kind: Secret
-	metadata:
-	name: mysecret
-	type: Opaque
-	data:
-	username: YWRtaW4=
-	password: MWYyZDFlMmU2N2Rm
-	---
-	apiVersion: v1
-	kind: Pod
-	metadata:
-	name: secretpod
-	spec:
-	containers:
-	- name: secretpod
-	image: nginx
-	env:
-	- name: SECRET_USERNAME
-	valueFrom:
-	secretKeyRef:
-	name: mysecret
-	key: username
-	- name: SECRET_PASSWORD
-	valueFrom:
-	secretKeyRef:
-	name: mysecret
-	key: password
-	volumeMounts:
-	- name: foo
-	mountPath: "/etc/foo"
-	restartPolicy: Never
-	volumes:
-	- name: foo
-	secret:
-	secretName: mysecret
-	items:
-	- key: username
-	path: my-group/my-username
-	mode: 0640
-	
-	kubectl apply -f <secretpod.yaml
-	kubectl get pods #Wait until the pod secretpod is running
-	kubectl exec -it  secretpod -- bash
-	env | grep SECRET && cat /etc/foo/my-group/my-username && echo
+apiVersion: v1
+kind: Secret
+metadata:
+name: mysecret
+type: Opaque
+data:
+username: YWRtaW4=
+password: MWYyZDFlMmU2N2Rm
+---
+apiVersion: v1
+kind: Pod
+metadata:
+name: secretpod
+spec:
+containers:
+- name: secretpod
+image: nginx
+env:
+- name: SECRET_USERNAME
+valueFrom:
+secretKeyRef:
+name: mysecret
+key: username
+- name: SECRET_PASSWORD
+valueFrom:
+secretKeyRef:
+name: mysecret
+key: password
+volumeMounts:
+- name: foo
+mountPath: "/etc/foo"
+restartPolicy: Never
+volumes:
+- name: foo
+secret:
+secretName: mysecret
+items:
+- key: username
+path: my-group/my-username
+mode: 0640
+
+kubectl apply -f <secretpod.yaml
+kubectl get pods #Wait until the pod secretpod is running
+kubectl exec -it  secretpod -- bash
+env | grep SECRET && cat /etc/foo/my-group/my-username && echo
 ```
 
  
@@ -607,16 +607,16 @@ ETCDCTL_API=3 etcdctl --cert /etc/kubernetes/pki/apiserver-etcd-client.crt --key
  
 
 ```yaml
-	apiVersion: apiserver.config.k8s.io/v1
-	kind: EncryptionConfiguration
-	resources:
-	- resources:
-	- secrets
-	providers:
-	- aescbc:
-	keys:
-	- name: key1
-	secret: cjjPMcWpTPKhAdieVtd+KhG4NN+N6e3NmBPMXJvbfrY= #Any random key
+apiVersion: apiserver.config.k8s.io/v1
+kind: EncryptionConfiguration
+resources:
+- resources:
+- secrets
+providers:
+- aescbc:
+keys:
+- name: key1
+secret: cjjPMcWpTPKhAdieVtd+KhG4NN+N6e3NmBPMXJvbfrY= #Any random key
 - identity: {}
 ```
 
@@ -625,9 +625,9 @@ ETCDCTL_API=3 etcdctl --cert /etc/kubernetes/pki/apiserver-etcd-client.crt --key
 之后，您需要在 kube-apiserver 上设置 --encryption-provider-config 标志，指向创建的配置文件的位置。您可以修改 /etc/kubernetes/manifest/kube-apiserver.yaml 文件，并添加以下行：
 
 ```yaml
-	containers:
-	- command:
-	- kube-apiserver
+containers:
+- command:
+- kube-apiserver
 - --encriyption-provider-config=/etc/kubernetes/etcd/<configFile.yaml>
 ```
 
@@ -636,9 +636,9 @@ ETCDCTL_API=3 etcdctl --cert /etc/kubernetes/pki/apiserver-etcd-client.crt --key
 向下滚动到volumeMounts部分：
 
 ```yaml
-	- mountPath: /etc/kubernetes/etcd
-	name: etcd
-	readOnly: true
+- mountPath: /etc/kubernetes/etcd
+name: etcd
+readOnly: true
 
 ```
 
@@ -647,9 +647,9 @@ ETCDCTL_API=3 etcdctl --cert /etc/kubernetes/pki/apiserver-etcd-client.crt --key
 在volumeMounts中向下滚动到hostPath:
 
 ```yaml
-	- hostPath:
-	path: /etc/kubernetes/etcd
-	type: DirectoryOrCreate
+- hostPath:
+path: /etc/kubernetes/etcd
+type: DirectoryOrCreate
 name: etcd
 ```
 
