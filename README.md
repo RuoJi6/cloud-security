@@ -33,6 +33,11 @@
 * [x] NodePort exposed services [NodePort 暴露的服务]
 * [x] Analyzing crypto miner container 分析加密挖矿容器[将挖矿木马映像推送到公共容器注册表]
 * [x] Kubernetes namespaces bypass [Kubernetes 命名空间绕过 内核路由表]
+* [x] Gaining environment information [获取环境信息]
+* [x] docker渗透基础知识 
+* [x] docker---配置不当--特权模式
+* [x] docker---配置不当--Socket逃逸
+* [x] docker---逃逸成功之后操作---docker
 * [x] 环境地址：https://pan.baidu.com/s/1h6nr8izEoRtcIhP27BcHuQ?pwd=ymi7 
 * [x] 还在编写中
 
@@ -65,6 +70,13 @@
 2023/11/25
   Analyzing crypto miner container 分析加密挖矿容器[将挖矿木马映像推送到公共容器注册表--k8s安全排查]
   Kubernetes namespaces bypass [Kubernetes 命名空间绕过 内核路由表--k8s靶场]
+--------------------------------------------------
+2023/12/2
+  Gaining environment information [获取环境信息]
+  docker渗透基础知识 
+  docker---配置不当--特权模式
+  docker---配置不当--Socket逃逸
+  docker---逃逸成功之后操作---docker
 ```
 
 <br/>
