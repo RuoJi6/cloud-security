@@ -81,6 +81,15 @@
 
 <br/>
 
+## 感谢以下为 项目贡献的师傅们 :confetti_ball:
+
+<table>
+    <tr>
+        <td align="center"><img alt="弱鸡" src="./avatar/2023.12.3.jpg" style="width: 100px;" /><br />弱鸡</td>
+    </tr>
+</table>
+
+
 
 
 ## :clap:致谢
