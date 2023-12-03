@@ -82,10 +82,12 @@
 <br/>
 
 ## 感谢以下为 项目贡献的师傅们 :confetti_ball:
-
 <table>
     <tr>
-        <td align="center"><img alt="弱鸡" src="./avatar/2023.12.3.jpg" style="width: 100px;" /><br />弱鸡</td>
+        <td align="center"><img alt="弱鸡" src="./avatar/1.jpg" style="width: 100px;" /><br />弱鸡</td>
+        <td align="center"><img alt="FH_hone" src="./avatar/2.jpg" style="width: 100px;" /><br />FH_hone</td>
+        <td align="center"><img alt="forerunner-凝" src="./avatar/3.jpg" style="width: 100px;" /><br />forerunner-凝</td>
+        <td align="center"><img alt="T4x0r" src="./avatar/4.jpg" style="width: 100px;" /><br />T4x0r</td>
     </tr>
 </table>
 
