@@ -88,6 +88,7 @@
         <td align="center"><img alt="FH_hone" src="./avatar/2.jpg" style="width: 100px;" /><br />FH_hone</td>
         <td align="center"><img alt="forerunner-凝" src="./avatar/3.jpg" style="width: 100px;" /><br />forerunner-凝</td>
         <td align="center"><img alt="T4x0r" src="./avatar/4.jpg" style="width: 100px;" /><br />T4x0r</td>
+        <td align="center"><img alt="杭椒" src="./avatar/5.jpg" style="width: 100px;" /><br />杭椒</td>
     </tr>
 </table>
 
