@@ -90,6 +90,7 @@
         <td align="center"><img alt="T4x0r" src="./avatar/4.jpg" style="width: 100px;" /><br />T4x0r</td>
         <td align="center"><img alt="杭椒" src="./avatar/5.jpg" style="width: 100px;" /><br />杭椒</td>
         <td align="center"><img alt="zhihuijiazeng" src="./avatar/6.jpg" style="width: 100px;" /><br />zhihuijiazeng</td>
+        <td align="center"><img alt="不懂安全的开发" src="./avatar/7.jpg" style="width: 100px;" /><br />不懂安全的开发</td>
     </tr>
 </table>
 
